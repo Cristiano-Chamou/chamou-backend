@@ -1,4 +1,4 @@
-const db = require('../db/connection');
+const db = require('../models/db');
 
 async function listarServicos(req, res) {
   try {
