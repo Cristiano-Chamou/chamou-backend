@@ -2,16 +2,16 @@ const express = require('express');
 const router = express.Router();
 
 const {
-  getServicos,
-  postServico,
-  putServico,
-  deleteServico
+  listarServicos,
+  criarServico,
+  atualizarServico,
+  deletarServico
 } = require('../controllers/servicoController');
 
-router.get('/', getServicos);
-router.post('/', postServico);
-router.put('/:id', putServico);
-router.delete('/:id', deleteServico);
+router.get('/', listarServicos);
+router.post('/', criarServico);
+router.put('/:id', atualizarServico);
+router.delete('/:id', deletarServico);
 
 module.exports = router;
 
